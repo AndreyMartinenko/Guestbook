@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+	<modules>
+		<GB_Guest>
+			<version>0.0.2</version>
+		</GB_Guest>
+	</modules>	
+	<frontend>
+		<layout>
+			<updates>
+				<gbguest>
+					<file>gb_guest.xml</file>
+				</gbguest>
+			</updates>
+		</layout>
+		<routers>
+			<gbguest>
+				<use>standard</use>
+				<args>
+					<module>GB_Guest</module>
+					<frontName>guestbook</frontName>
+				</args>
+			</gbguest>
+		</routers>
+	</frontend>
+	<global>
+		<blocks>
+			<gbguest>
+				<class>GB_Guest_Block</class>
+			</gbguest>
+		</blocks>
+		<models>
+			<gbguest>
+				<class>GB_Guest_Model</class>
+				<resourceModel>gbguest_resource</resourceModel>
+			</gbguest>
+			<gbguest_resource>
+				<class>GB_Guest_Model_Resource</class>
+				<entities>
+					<table_guest>
+						<table>gb_guest_entities</table>
+					</table_guest>
+				</entities>
+			</gbguest_resource>
+		</models>
+		<resources>
+			<gbguest_setup>
+				<setup>
+					<module>GB_Guest</module>
+				</setup>
+			</gbguest_setup>
+		</resources>
+	</global>
+</config>

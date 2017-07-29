@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+	<modules>
+		<GB_Guest>
+			<active>true</active>
+			<codePool>local</codePool>
+		</GB_Guest>
+	</modules>
+</config>

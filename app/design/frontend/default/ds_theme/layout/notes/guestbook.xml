@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout version="0.1.0">
+    <notes_questbook_index_index>  
+        <reference name="content">
+            <block type="notes_questbook_index_index/content" name="guestbook.all" />
+        </reference>
+    </notes_questbook_index_index>
+</layout>

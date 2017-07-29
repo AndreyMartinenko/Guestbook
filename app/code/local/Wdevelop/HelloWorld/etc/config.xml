@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Wdevelop_HelloWorld>
+			<version>0.1.0</version>
+		</Wdevelop_HelloWorld>
+	</modules>
+	<frontend>
+		<routers>
+			<hello_world>
+				<use>standard</use>
+				<args>
+					<module>Wdevelop_HelloWorld</module>
+					<frontName>hello</frontName>
+				</args>
+			</hello_world>
+		</routers>
+	</frontend>
+</config>

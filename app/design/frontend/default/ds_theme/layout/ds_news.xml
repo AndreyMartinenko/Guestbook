@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout version="1.0">
+    <default>
+            <reference name="top.links">
+                <action method="addLink" translate="label title">
+                    <label>Guestbook</label>
+                    <url>guestbook</url>
+                    <title>Guestbook</title>
+                    <prepare>true</prepare>
+                    <position>60</position>
+                </action>
+                <action method="addLink" translate="label title">
+                    <label>News</label>
+                    <url>news</url>
+                    <title>News</title>
+                    <prepare>true</prepare>
+                    <position>70</position>
+                </action>
+            </reference>
+    </default>
+    <dsnews_index_index>
+        <reference name="content">
+            <block type="dsnews/news" template="ds_news/index.phtml" />
+        </reference>
+    </dsnews_index_index>
+    <dsnews_index_view>
+        <reference name="content">
+            <block type="dsnews/view" name="news.content" template="ds_news/view.phtml" />
+        </reference>
+    </dsnews_index_view>
+</layout>
